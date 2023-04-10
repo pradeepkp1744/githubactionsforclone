@@ -11,8 +11,8 @@ jobs:
     runs-on: windows-latest
     steps:
       
-      - name: Clone 
-        uses: pradeepkp1744/githubactionsforclone@v2
+      - name: Clone pradeepkp1744/Terraformcode PUBLIC repository
+        uses: actions/checkout@v2
         with:
           owner: 'pradeepkp1744'
           repository: 'pradeepkp1744/Terraformcode'
@@ -22,6 +22,6 @@ jobs:
           echo "ROOT"
           ls -la
           echo "CLONED REPO"
-          cd poc-github-actions
+          cd pradeepkp1744/Terraformcode
           ls -la
         shell: bash
