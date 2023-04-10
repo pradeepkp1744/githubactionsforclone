@@ -1,0 +1,27 @@
+name: Clone Public Repository Workflow
+
+on:
+  push:
+  schedule:
+    - cron: "*/1 * * * *"
+  workflow_dispatch:
+
+jobs:
+  job-public-repo-windows:
+    runs-on: windows-latest
+    steps:
+      
+      - name: Clone 
+        uses: pradeepkp1744/githubactionsforclone-action@v2
+        with:
+          owner: 'pradeepkp1744'
+          repository: 'pradeepkp1744/Terraformcode'
+      
+      - name: Access cloned repository content
+        run: |
+          echo "ROOT"
+          ls -la
+          echo "CLONED REPO"
+          cd poc-github-actions
+          ls -la
+        shell: bash
