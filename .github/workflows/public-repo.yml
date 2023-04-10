@@ -12,7 +12,7 @@ jobs:
     steps:
       
       - name: Clone 
-        uses: pradeepkp1744/githubactionsforclone-action@v2
+        uses: pradeepkp1744/githubactionsforclone@v2
         with:
           owner: 'pradeepkp1744'
           repository: 'pradeepkp1744/Terraformcode'
