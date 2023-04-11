@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           owner: 'pradeepkp1744'
-          repository: 'Terraformcode'
+          repository: '{pradeepkp1744}/{Terraformcode}'
       
       - name: Access cloned repository content
         run: |
