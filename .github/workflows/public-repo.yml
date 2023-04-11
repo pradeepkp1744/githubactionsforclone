@@ -19,7 +19,8 @@ jobs:
       
       - name: Access cloned repository content
         run: |
-          echo "pradeepkp1744/githubactions"
+          echo "clonedrepo"
           ls -la
           cd cloneddata
+          ls -la
         shell: bash
